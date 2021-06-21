@@ -6,27 +6,10 @@
  * @flow strict-local
  */
 
-import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
 import React from "react";
-import {
-  SafeAreaView,
-  StatusBar,
-  useColorScheme,
-  Text,
-  View
-} from "react-native";
-
-import { HomeScreen } from "./src/content/screen/HomeScreen";
+import Root from "./Root";
 const App = () => {
-  const Stack = createStackNavigator();
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+  return <Root />;
 };
 
 export default App;

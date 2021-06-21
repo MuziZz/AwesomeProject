@@ -6,22 +6,26 @@
  * @flow strict-local
  */
 
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
 import React from "react";
-import { SafeAreaView, StatusBar, useColorScheme, Text } from "react-native";
+import {
+  SafeAreaView,
+  StatusBar,
+  useColorScheme,
+  Text,
+  View
+} from "react-native";
 
-import { Colors } from "react-native/Libraries/NewAppScreen";
-
+import { HomeScreen } from "./src/content/screen/HomeScreen";
 const App = () => {
-  const isDarkMode = useColorScheme() === "dark";
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter
-  };
-
+  const Stack = createStackNavigator();
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? "light-content" : "dark-content"} />
-      <Text>xxxx</Text>
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={HomeScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 

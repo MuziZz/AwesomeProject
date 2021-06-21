@@ -2,7 +2,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import React, { Component } from "react";
 import DetailScreen from "./src/content/screen/DetailScreen";
-import HomeScreen  from "./src/content/screen/HomeScreen";
+import HomeScreen from "./src/content/screen/HomeScreen";
 
 export default class Root extends Component {
   render() {

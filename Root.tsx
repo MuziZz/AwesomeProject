@@ -14,13 +14,6 @@ export default class Root extends Component {
     const MainStack = createStackNavigator();
     const Tab = createBottomTabNavigator();
     return (
-      // <NavigationContainer>
-      //   <MainStack.Navigator initialRouteName="Home">
-      //     <MainStack.Screen name="Home" component={HomeScreen} />
-      //     <MainStack.Screen name="Detail" component={DetailScreen} />
-      //   </MainStack.Navigator>
-      // </NavigationContainer>
-
       <NavigationContainer>
         <Tab.Navigator>
           <Tab.Screen name="Home" component={HomeStackScreen}></Tab.Screen>

@@ -4,13 +4,11 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 export default class HomeScreen extends React.Component {
-  componentDidUpdate() {}
   render() {
     const { navigation, route } = this.props;
     return (
-      <View>
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
         <Text> home screen </Text>
-
         <Button
           title="Go to Detail..."
           onPress={() => {
@@ -20,6 +18,10 @@ export default class HomeScreen extends React.Component {
               otherParams: "anything you want here"
             });
           }}
+        />
+        <Button
+          onPress={() => navigation.navigate("MyModal")}
+          title="Open Modal"
         />
       </View>
     );

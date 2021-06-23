@@ -8,6 +8,7 @@
 
 import React from "react";
 import Root from "./Root";
+import { RootStack } from "./Root";
 const App = () => {
   return <Root />;
 };

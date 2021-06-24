@@ -2,14 +2,13 @@ import React from "react";
 import { Button, Text, View } from "react-native";
 
 export default class DetailScreen extends React.Component {
-  componentDidMount() {}
   render() {
     const { navigation, route } = this.props;
-    const { itemId, otherParams } = route.params;
+    // const { itemId, otherParams } = route.params;
     return (
       <View>
-        <Text> itemId:{JSON.stringify(itemId)} </Text>
-        <Text>otherParams: {JSON.stringify(otherParams)} </Text>
+        {/* <Text> itemId:{JSON.stringify(itemId)} </Text>
+        <Text>otherParams: {JSON.stringify(otherParams)} </Text> */}
         <Button
           title="Go to Home"
           onPress={() =>

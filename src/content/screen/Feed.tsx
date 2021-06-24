@@ -1,10 +1,10 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-export default function MainStackScreen() {
+export default function FeedScreen() {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Main Stack screen</Text>
+      <Text>Feed screen</Text>
     </View>
   );
 }

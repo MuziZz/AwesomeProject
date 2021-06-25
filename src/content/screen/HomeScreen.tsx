@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Button, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import CustomerView from "./CustomerView";
 
 export default class HomeScreen extends React.Component {
   render() {
